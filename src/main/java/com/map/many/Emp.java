@@ -14,10 +14,6 @@ public class Emp {
 	private int id;
 	private String name;
 	@ManyToMany
-//	@JoinTable
-//	(name="emp_project_relation",
-//	joinColumns= {@JoinColumn(name="eid")},
-//	inverseJoinColumns = {@JoinColumn(name="pid")})
 	private List<Project> projects;
 	public Emp(int id, String name, List<Project> projects) {
 		super();
